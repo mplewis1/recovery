@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:all": "cd server && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build",
+    "build": "cd server && npm install --production=false && cd ../client && npm install --production=false && npm run build",
     "start": "cd server && node index.js",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev"
